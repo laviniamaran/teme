@@ -1,22 +1,14 @@
-lista=[1, True, '123', False, 6, ()]
-
-def ordered_ints(list_of_objects: list=[1, True, '123', False, 6, ()]):
-   lista = [1, True, '123', False, 6, ()]
-   lista = []
-   lista=[1, True, '123', False, 6, ()]
-   lista=[]
-   for i in lista:
-    lista.append(int(i))
-    print(lista1)
-
-lista = [123,6,1,1,0,0]
-print(len(lista))
-print(sorted(lista))
-lista.sort(reverse=True)
-print(lista)
+def ordered_ints(list_of_objects: list):
+    return_list= []
+    for i in list_of_objects:
+        if type(i)== tuple:
+            return_list.append(len(i))
+        else:
+            return_list.append(int(i))
+    return_list.sort(reverse=True)
+    return return_list
 
 print(ordered_ints([1, True, '123', False, 6, ()]))
-
 
 
 
@@ -37,7 +29,6 @@ def factorial_of_squares(n):
     return result
 
 print(factorial_of_squares(5))
-
 
 
 
